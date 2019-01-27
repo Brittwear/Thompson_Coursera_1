@@ -42,11 +42,12 @@
  * This function prints out to the screen the required
  * statictics for assignment 1 supplied array.
  *
- * @param void 
+ * @param input_array Pointer to input array 
+ * @param size Length of the input array
  *
  * @return void
  */
-void print_statistics(void);
+void print_statistics(unsigned char * input_array, unsigned int size);
 
 /**
  * @brief Prints out the array to the screen
@@ -121,11 +122,9 @@ unsigned char find_minimum(unsigned  char * ptr, unsigned int length);
  * and return that array
  *
  * @param ptr Pointer to data array
- * @param length Length of the array
- *
- * @return prt A pointer to the sorted array
+ * @param legnth Length of the array
  */
-unsigned char * sort_array(unsigned char * ptr, unsigned int length);
+void sort_array(unsigned char * ptr, unsigned int length);
 
 #endif /* __STATS_H__ */
 
